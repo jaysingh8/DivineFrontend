@@ -5,7 +5,7 @@ const ContinueWithGoogle = () => {
   const loading = useSelector((state) => state.auth.loading)
 
   const handleGoogleLogin = () => {
-    window.open('http://localhost:3000/api/auth/google', '_self')
+    window.open('https://divinebackend-1-b1sy.onrender.com/api/auth/google', '_self')
   }
 
   return (
