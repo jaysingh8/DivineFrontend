@@ -290,7 +290,7 @@ const Default = () => {
               {featuredProfiles.map((profile) => (
                 <div
                   key={profile._id}
-                  onClick={() => navigate(`/profile/${profile._id}`)}
+                  onClick={() => navigate(`/browse/${profile._id}`)}
                   className="group bg-cream border border-coffee/20 rounded-2xl p-5 hover:border-gold/30 hover:shadow-xl hover:shadow-gold/10 transition-all cursor-pointer"
                 >
                   <div className="flex items-center gap-4 mb-4">
