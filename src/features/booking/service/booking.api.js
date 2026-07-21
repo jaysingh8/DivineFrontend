@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const bookingApiInstance = axios.create({
-  baseURL: `http://localhost:3000/api/booking`,
+  baseURL: import.meta.env.VITE_API_UR+`/api/booking`,
   withCredentials: true,
 });
 
