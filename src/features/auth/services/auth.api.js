@@ -1,12 +1,12 @@
 import axios from "axios";
 
 const authApiInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_UR+`/api/auth`,
+  baseURL: import.meta.env.VITE_API_UR,
   withCredentials: true,
 });
 
 export async function register({email,password,contact,fullname,isGetter}) {
-    const response = await authApiInstance.post("/register",{
+    const response = await authApiInstance.post("/api/auth/register",{
         email,
         password,
         contact,
@@ -18,7 +18,7 @@ export async function register({email,password,contact,fullname,isGetter}) {
 
 
 export async function login({email,password}) {
-    const response = await authApiInstance.post("/login",{
+    const response = await authApiInstance.post("/api/auth/login",{
         email,
         password
     })
@@ -26,7 +26,7 @@ export async function login({email,password}) {
 }
 
 export async function  getMe() {
-    const response = await authApiInstance.get("/getMe")
+    const response = await authApiInstance.get("/api/auth/getMe")
     return response.data
     
 }
