@@ -263,7 +263,7 @@ const Default = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-charcoal mt-2">Top Photographers</h2>
             </div>
             <button
-              onClick={() => navigate('/browse')}
+              onClick={() => navigate('/findProfile')}
               className="h-[42px] px-6 text-[13px] font-semibold rounded-xl bg-gradient-to-r from-gold to-amber-600 text-charcoal hover:shadow-lg hover:shadow-gold/30 transition-all flex items-center gap-2"
             >
               View All <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>

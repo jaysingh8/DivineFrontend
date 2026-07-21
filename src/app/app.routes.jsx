@@ -73,9 +73,9 @@ export const routes = createBrowserRouter([
             {
                 path: "/findProfile",
                 element: (
-                    <ProtectedRoute role="user">
+                    
                         <LazyRoute><AllPhotograherDetails /></LazyRoute>
-                    </ProtectedRoute>
+                   
                 )
             },
             {
