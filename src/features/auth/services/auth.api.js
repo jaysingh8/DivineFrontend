@@ -1,0 +1,33 @@
+import axios from "axios";
+
+const authApiInstance = axios.create({
+  baseURL: `http://localhost:3000/api/auth`,
+  withCredentials: true,
+});
+
+export async function register({email,password,contact,fullname,isGetter}) {
+    const response = await authApiInstance.post("/register",{
+        email,
+        password,
+        contact,
+        fullname,
+        isGetter
+    })
+    return response.data
+}
+
+
+export async function login({email,password}) {
+    const response = await authApiInstance.post("/login",{
+        email,
+        password
+    })
+    return response.data
+}
+
+export async function  getMe() {
+    const response = await authApiInstance.get("/getMe")
+    return response.data
+    
+}
+export default authApiInstance;
