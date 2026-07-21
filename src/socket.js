@@ -1,1 +1,0 @@
-// Socket.IO client removed — only location-based booking (REST API) is used
